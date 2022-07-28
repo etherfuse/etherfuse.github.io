@@ -53,10 +53,6 @@
         id: "epoch_credits",
         dataType: tableau.dataTypeEnum.int,
       },
-      {
-        id: "ip_country",
-        dataType: tableau.dataTypeEnum.string,
-      },
     ];
 
     var tableSchema = {
@@ -79,18 +75,17 @@
       for (var i = 0, len = feat.length; i < len; i++) {
         tableData.push({
           identity: feat[i].identity,
-        vote_identity: feat[i].vote_identity,
-          name: feat[i].name ,
+          vote_identity: feat[i].vote_identity,
+          name: feat[i].name,
           image: feat[i].image,
-          ip_latitude: feat[i].ip_latitude, 
-          ip_longitude: feat[i].ip_longitude ,
+          ip_latitude: feat[i].ip_latitude,
+          ip_longitude: feat[i].ip_longitude,
           ip_city: feat[i].ip_city,
           ip_country: feat[i].ip_country,
-          ip_asn: feat[i].ip_asn ,
+          ip_asn: feat[i].ip_asn,
           ip_org: feat[i].ip_org,
           stake_weight: feat[i].stake_weight,
           epoch_credits: feat[i].epoch_credits,
-          ip_country: feat[i].ip_country,
         });
       }
 
